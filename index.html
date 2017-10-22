@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <div class="box">
+        <h2 class="title is-2 has-text-centered" id="title"><strong>Weather Forecast</strong></h2>
+        <div class="columns is-half">
+            <div class="column">
+                
+            </div>
+            <div class="column">
+                <input class="input" type="text" id="city" placeholder="Input City Name">
+            </div>
+
+            <div class="column">
+                <button class="button is-primary" id="reportweather">Report Weather</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" id="resultbox">
+        
+        <h2 class="title is-4 has-text-centered" id="cityname"></h2>
+        
+        <div class="notification">
+                <div class="level">
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <p class="heading">Cloudiness</p>
+                            <p class="title" id="showweather"></p>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <p class="heading">Temperature</p>
+                            <p class="title" id="showtemp"></p>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <p class="heading">Humidity</p>
+                            <p class="title" id="showhum"></p>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <p class="heading">Wind</p>
+                            <p class="title" id="showwind"></p>
+                          </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
